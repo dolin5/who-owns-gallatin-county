@@ -36,6 +36,12 @@
         <calcite-shell-panel id="widget-panel" slot="primary-panel" theme="dark" layout="leading">
             <calcite-action-bar slot="action-bar" theme="dark" >
               <calcite-action-group theme="dark">
+                <calcite-action text="Search" id='search-action'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20px" height="100%">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M14.482 13.784L9.708 9.011a4.8 4.8 0 1 0-.69.69l4.773 4.773zM3.315 8.687a3.8 3.8 0 1 1 2.687 1.112 3.806 3.806 0 0 1-2.687-1.112z"/>
+                    <!-- <path fill="none" d="M0 0h16v16H0z"/> -->
+                  </svg>                  
+                </calcite-action>
                 <calcite-action text="Owners" id='owner-action'>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20px" height="100%">
                     <path d="M7.1 1.5A1.399 1.399 0 0 1 8.5.1l.052.001h.052a1.4 1.4 0 0 1 .001 2.8l-.053-.002L8.5 2.9a1.4 1.4 0 0 1-1.4-1.4zm-.973 3.552L5.114 9.105a.546.546 0 0 0 1.033.318l.932-3.265v2.947l-.453 6.347a.511.511 0 0 0 1.015.12l.911-5.484.912 5.484a.511.511 0 0 0 1.014-.12l-.452-6.347V6.158l.931 3.265a.546.546 0 0 0 1.034-.318l-1.013-4.053A1.389 1.389 0 0 0 9.63 4H7.474a1.389 1.389 0 0 0-1.347 1.052z"/>
@@ -60,9 +66,9 @@
             <div>
                 <calcite-block open>
                     <calcite-block-content>
-                        <div id="widget-owners" class="hidden">
-                        </div>
-                        <div id="widget-legend"></div>
+                      <div id="widget-search"></div>
+                        <div id="widget-owners" class="hidden"> </div>
+                        <div id="widget-legend" class="hidden"></div>
                         <div id="widget-layerlist" class="hidden"></div>
                     </calcite-block-content>
                 </calcite-block>
