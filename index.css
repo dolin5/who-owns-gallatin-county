@@ -23,8 +23,17 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
+  background: white;
 }
 
 .hidden {
   display: none;
+}
+
+.accordion-item-title {
+  color: #f59e00;
+}
+
+.float-right {
+  float:right
 }
